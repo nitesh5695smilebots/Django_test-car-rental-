@@ -36,7 +36,7 @@ Here you need to identify the schema/model fields by observing the UIs, The goal
 
 5.Create Logs
  -whenever any user login , a log should be generate in login_logs table(model) (fields=user,user_type,login_at )<br>
- <b>Note<b>: Use signals to create logs
+ <b>Note: Use signals to create logs</b>
 <hr>
 
 ### Coding Guidelines
