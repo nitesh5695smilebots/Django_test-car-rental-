@@ -1,0 +1,25 @@
+
+for admin Login ---  >   admin/
+List of car -- >    carList/ [name='car_list']
+updating details of car -- >    carEdit/<int:pk>/ [name='car_edit']
+history of Rent -- > carHistory/rent_history/ [name='rent_history']
+create_rent -- >    create_rent/ [name='car_rent']
+car_create -- >    car_create/ [name='car_create']
+login -->    api-auth/ login/ [name='login']
+logout -- >    api-auth/ logout/ [name='logout']
+
+
+users List
+
+username -- > admin 
+password -- > 0
+
+username -- > Riyaz 
+password -- > 87654321@#Aa
+
+username -- > Riya 
+password -- > 87654321@#Aa
+
+username -- > Ramu 
+password -- > 87654321@#Aa
+

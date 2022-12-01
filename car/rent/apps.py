@@ -2,7 +2,7 @@ from django.apps import AppConfig
 
 
 class MyAppConfig(AppConfig):
-    name = 'myapp'
+    name = 'rent'
 
     def ready(self):
         import rent.signals

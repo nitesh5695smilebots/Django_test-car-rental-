@@ -31,5 +31,6 @@ class Rent(generics.CreateAPIView):
     serializer_class = RentSerializer
     permission_classes = [IsAuthenticated]
 
+ 
 
     

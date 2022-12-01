@@ -148,36 +148,36 @@ LOGGING = {
             'format': '%(levelname)s %(message)s'
         },
     },
-    'handlers': {
-        'django': {
-            'level': 'DEBUG',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': '..log/django.log',
-            'maxBytes': (1024 * 1024 * 10),
-            'backupCount': 10,
-            'formatter': 'verbose',
+    # 'handlers': {
+    #     'django': {
+    #         'level': 'DEBUG',
+    #         'class': 'logging.handlers.RotatingFileHandler',
+    #         'filename': '..log/django.log',
+    #         'maxBytes': (1024 * 1024 * 10),
+    #         'backupCount': 10,
+    #         'formatter': 'verbose',
             
-        },
-        'user': {
-            'level': 'INFO',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': '../log/user.log',
-            'maxBytes': 1024 * 1024 * 10,
-            'backupCount': 10,
-            'formatter': 'verbose',
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['django', 'console'],
-            'level': 'DEBUG',
+    #     },
+    #     'user': {
+    #         'level': 'INFO',
+    #         'class': 'logging.handlers.RotatingFileHandler',
+    #         'filename': '../log/user.log',
+    #         'maxBytes': 1024 * 1024 * 10,
+    #         'backupCount': 10,
+    #         'formatter': 'verbose',
+    #     },
+    # },
+    # 'loggers': {
+    #     'django': {
+    #         'handlers': ['django', 'console'],
+    #         'level': 'DEBUG',
             
-        },
-        'user': {
-            'handlers': ['user', 'console'],
-            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
-        },
-    },
+    #     },
+    #     'user': {
+    #         'handlers': ['user', 'console'],
+    #         'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+    #     },
+    # },
 
 }
 
